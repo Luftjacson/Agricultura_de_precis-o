@@ -98,7 +98,7 @@ float: left;
 .img-div3 {
     float: left;
     margin: 0 15px 15px 0;
-    width: 730px;
+    width: 400px;
     border: 3px double #2c3e50;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
@@ -116,7 +116,7 @@ float: left;
 .img-div5 {
     float: left;
     margin: 0 15px 15px 0;
-    width: 450px;
+    width: 400px;
     border: 7px ridge #ffeaa7;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
