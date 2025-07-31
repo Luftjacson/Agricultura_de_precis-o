@@ -86,6 +86,21 @@ body.contraste-ativo img {
     user-select: none;
 }
 
+.site-header {
+    position: relative; /* adicionado para posicionamento da assinatura */
+    background: linear-gradient(rgba(40, 80, 50, 0.6), rgba(40, 80, 50, 0.6)),
+                url('fundo_cabeçalho.jpg') center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 4px solid #4B8673;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 960px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
 /* =====================================
    3. MENU DE ACESSIBILIDADE
 ===================================== */
