@@ -1,170 +1,184 @@
-/* estilo.css */
+/* =====================================
+   1. CONFIGURAÇÕES GERAIS DO SITE
+===================================== */
+html {
+    font-size: 100%; /* Base para escalonamento */
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #F4FAF7;
+    color: #4B8673;
+    line-height: 1.6;
 }
+
+/* CONTRASTE ATIVO – aplica-se ao body */
+body.contraste-ativo {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+body.contraste-ativo header,
+body.contraste-ativo .div1,
+body.contraste-ativo .div2,
+body.contraste-ativo .div3,
+body.contraste-ativo .div4,
+body.contraste-ativo .div5,
+body.contraste-ativo .img-texto {
+    background-color: #111 !important;
+    color: #ff0 !important;
+    border-color: #888 !important;
+}
+
+body.contraste-ativo button {
+    background-color: #333 !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
+body.contraste-ativo img {
+    filter: grayscale(100%) contrast(150%);
+}
+
+/* =====================================
+   2. CABEÇALHO MODERNO E INTERATIVO
+===================================== */
 .site-header {
-    background-color: #2c3e50;
-    padding: 40px 20px;
+    background: linear-gradient(rgba(40, 80, 50, 0.6), rgba(40, 80, 50, 0.6)),
+                url('fundo_cabeçalho.jpg') center/cover no-repeat;
+    padding: 80px 20px;
     text-align: center;
-    color: #ecf0f1;
-    border-bottom: 5px solid #1abc9c;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    color: #ffffff;
+    border-bottom: 4px solid #4B8673;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 960px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+.site-header:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .site-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 3.125rem; /* equivalente a 50px */
     margin: 0;
-    font-size: 36px;
-    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-}
-.div1, .div2, .div3, .div4, .div5 {
-    overflow: auto;
-}
-.div1, .div2, .div3, .div4, .div5 {
-    padding: 30px;
-    text-align: center;
-    color: white;
-   
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
-/* Divisão 1 */
-.div1 {
-    background-color: #1abc9c;
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
+/* ÍCONES ESTÁTICOS NO CABEÇALHO */
+.icone-animado {
+    font-size: 3rem; /* tamanho fixo */
+    margin: 10px;
+    display: inline-block;
+    animation: none !important;
+    position: static !important;
+    user-select: none;
+}
+
+/* =====================================
+   3. MENU DE ACESSIBILIDADE
+===================================== */
+.acessibilidade-wrapper {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    height: auto;
+    z-index: 1000;
+}
+
+.acessibilidade-wrapper:hover .acessibilidade-menu {
+    right: 0;
+}
+
+.acessibilidade-menu {
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    background-color: #708D81;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.4s ease;
+}
+
+.acessibilidade-menu button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #A8D5BA;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.acessibilidade-menu button:hover {
+    background-color: #4B8673;
     color: #ffffff;
 }
 
-/* Divisão 2 */
-.div2 {
-    background-color: #34495e;
-    font-family: 'Georgia', serif;
-    font-size: 20px;
-    color: #f1c40f;
-}
-
-/* Divisão 3 */
-.div3 {
-    background-color: #e67e22;
-    font-family: 'Courier New', monospace;
-    font-size: 22px;
+/* =====================================
+   4. DIVs ESTILIZADAS
+===================================== */
+.div1, .div2, .div3, .div4, .div5 {
+    background: linear-gradient(135deg, #CDE8D5, #A8D5BA);
+    border: 2px solid #4B8673;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 960px;
+    padding: 30px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    letter-spacing: 1px;
     color: #2c3e50;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
 
-/* Divisão 4 */
-.div4 {
-    background-color: #9b59b6;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 26px;
-    color: #ecf0f1;
+.div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
-/* Divisão 5 */
-.div5 {
-    background-color: #c0392b;
-    font-family: 'Verdana', sans-serif;
-    font-size: 18px;
-    color: #ffeaa7;
-}
-.div1 img, .div2 img, .div3 img, .div4 img, .div5 img {
+/* =====================================
+   5. IMAGENS AJUSTADAS
+===================================== */
+img {
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 15px auto;
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-    
-}
-.img-div1 {
-float: left;
-    margin: 0 15px 15px 0;
-    width: 330px;
-    border: 3px solid #16a085;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-    
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
 }
 
-.img-div2 {
-    float: left;
-    margin: 0 15px 15px 0;
-    width: 380px;
-    border: 3px dashed #f1c40f;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-}
-
-.img-div3 {
-    float: left;
-    margin: 0 15px 15px 0;
-    width: 400px;
-    border: 3px double #2c3e50;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-}
-
-.img-div4 {
-    float: left;
-    margin: 0 15px 15px 0;
-    width: 390px;
-    border: 4px groove #ecf0f1;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-}
-
-.img-div5 {
-    float: left;
-    margin: 0 15px 15px 0;
-    width: 400px;
-    border: 7px ridge #ffeaa7;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-}
-
+/* =====================================
+   6. TEXTOS NAS DIVs
+===================================== */
 .div1 p, .div2 p, .div3 p, .div4 p, .div5 p {
-    margin-top: 10px;
-    padding: 10px;
-}
-
-/* Texto da Divisão 1 */
-.texto-div1 {
-    font-size: 18px;
-    color: #16d138;
-    font-style: italic;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.05rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #2c3e50;
     text-align: justify;
-}
-
-/* Texto da Divisão 2 */
-.texto-div2 {
-    font-size: 16px;
-    color: #f39c12;
-    font-weight: bold;
-    text-align: justify;
-}
-
-/* Texto da Divisão 3 */
-.texto-div3 {
-    font-size: 20px;
-    color: #1f2d3d;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
-    text-align: justify;
-}
-
-/* Texto da Divisão 4 */
-.texto-div4 {
-    font-size: 17px;
-    color: #2db5d7;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-left: 4px solid #bdc3c7;
-    text-align: justify;
-}
-
-/* Texto da Divisão 5 */
-.texto-div5 {
-    font-size: 15px;
-    color: #0f7104;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: justify;
+    padding: 15px;
+    border-left: 4px solid #708D81;
+    margin: 20px 0 0 0;
+    border-radius: 6px;
 }

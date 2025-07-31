@@ -1,46 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página com 5 Divisões</title>
-    <!-- Link para o arquivo CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agricultura Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="site-header">
+
+  <!-- WRAPPER DO MENU DE ACESSIBILIDADE -->
+  <div class="acessibilidade-wrapper">
+    <div class="acessibilidade-menu">
+      <button onclick="aumentarFonte()">A+</button>
+      <button onclick="diminuirFonte()">A−</button>
+      <button onclick="alternarContraste()">Contraste</button>
+      <button onclick="resetarAcessibilidade()">Resetar</button>
+    </div>
+  </div>
+
+  <!-- CABEÇALHO -->
+  <header class="site-header">
     <h1>Agricultura Digital e Tecnologias no Campo</h1>
-</header>
+    <span class="icone-animado icone1">🌾</span>
+    <span class="icone-animado icone2">🚜</span>
+    <span class="icone-animado icone3">🌱</span>
+  </header>
 
-    <div class="div1">AGRICULTURA DE PRECISÃO </div>
-    <img src="agricultura_moderna.jpg" alt="agricultura de precisão" class="img-div1">
-    
-    <p class="texto-div1">A agricultura de precisão é um conjunto de tecnologias aplicadas ao campo com o objetivo de aumentar a produtividade, reduzir custos e minimizar impactos ambientais. Utilizando sensores, GPS, drones e softwares, o agricultor consegue monitorar e manejar as lavouras de forma detalhada, tomando decisões com base em dados reais. Essa prática representa um passo importante para uma agricultura mais eficiente, sustentável e conectada com a inovação.</p>
-</div>
+  <!-- BLOCO 1 -->
+  <div class="div1">
+    <h2>AGRICULTURA DE PRECISÃO</h2>
+    <div class="img-flex-container">
+      <img src="agricultura_moderna.jpg" alt="agricultura de precisão">
+      <div class="img-texto texto-div1">
+        <p>A agricultura de precisão é um conjunto de tecnologias aplicadas ao campo com o objetivo de aumentar a produtividade, reduzir custos e minimizar impactos ambientais. Utilizando sensores, GPS, drones e softwares, o agricultor consegue monitorar e manejar as lavouras de forma detalhada, tomando decisões com base em dados reais. Essa prática representa um passo importante para uma agricultura mais eficiente, sustentável e conectada com a inovação.</p>
+      </div>
+    </div>
+  </div>
 
-    <div class="div2">AGRICULTURA 4.0 </div>
-    <img src="agricultura_4.0_capa.jpg" alt="agricultura de precisão" class="img-div2">
-   
-     <p class="texto-div2">A Agricultura 4.0 representa a revolução digital no campo, integrando tecnologias como Internet das Coisas (IoT), inteligência artificial, big data e automação para otimizar a produção agrícola. Máquinas conectadas, sensores inteligentes e sistemas de gestão permitem monitoramento em tempo real, tomada de decisões mais precisas e maior sustentabilidade. Com ela, o agronegócio entra definitivamente na era da transformação digital..</p>
-</div>
+  <!-- BLOCO 2 -->
+  <div class="div2">
+    <h2>AGRICULTURA 4.0</h2>
+    <div class="img-flex-container">
+      <img src="agricultura_4.0_capa.jpg" alt="Agricultura 4.0">
+      <div class="img-texto texto-div2">
+        <p>A Agricultura 4.0 representa a revolução digital no campo, integrando tecnologias como Internet das Coisas (IoT), inteligência artificial, big data e automação para otimizar a produção agrícola. Máquinas conectadas, sensores inteligentes e sistemas de gestão permitem monitoramento em tempo real, tomada de decisões mais precisas e maior sustentabilidade. Com ela, o agronegócio entra definitivamente na era da transformação digital.</p>
+      </div>
+    </div>
+  </div>
 
-    <div class="div3">FUTURO DA AGRICULTURA </div>
-    <img src="futuro_agricultura.jpg" alt="futuro_agricultura" class="img-div3">
-    
-    <p class="texto-div3">O futuro da agricultura está cada vez mais conectado à inovação tecnológica e à sustentabilidade. Com o avanço da biotecnologia, da automação e da inteligência artificial, a produção de alimentos tende a ser mais eficiente, personalizada e ambientalmente responsável. Além disso, a preocupação com o uso racional da água, a regeneração do solo e a adaptação às mudanças climáticas serão pilares para garantir a segurança alimentar nas próximas gerações. </p>
-</div>
+  <!-- BLOCO 3 -->
+  <div class="div3">
+    <h2>FUTURO DA AGRICULTURA</h2>
+    <div class="img-flex-container">
+      <img src="futuro_agricultura.jpg" alt="Futuro da Agricultura">
+      <div class="img-texto texto-div3">
+        <p>O futuro da agricultura está cada vez mais conectado à inovação tecnológica e à sustentabilidade. Com o avanço da biotecnologia, da automação e da inteligência artificial, a produção de alimentos tende a ser mais eficiente, personalizada e ambientalmente responsável. Além disso, a preocupação com o uso racional da água, a regeneração do solo e a adaptação às mudanças climáticas serão pilares para garantir a segurança alimentar nas próximas gerações.</p>
+      </div>
+    </div>
+  </div>
 
-    <div class="div4">MODERNIZAÇÃO DO CAMPO </div>
-    <img src="moderno_2025.jpg" alt="moderno_2025" class="img-div4">
-    
-     <p class="texto-div4">A modernização do campo transformou profundamente a vida no meio rural. Máquinas agrícolas avançadas, irrigação automatizada, correção do solo e acesso à internet têm aumentado a produtividade e a qualidade de vida dos produtores. Essa evolução não é apenas tecnológica, mas também social, com acesso a crédito, capacitação e políticas públicas que valorizam o agricultor e impulsionam o desenvolvimento das comunidades rurais..</p>
-</div>
+  <!-- BLOCO 4 -->
+  <div class="div4">
+    <h2>MODERNIZAÇÃO DO CAMPO</h2>
+    <div class="img-flex-container">
+      <img src="moderno_2025.jpg" alt="Modernização do Campo">
+      <div class="img-texto texto-div4">
+        <p>A modernização do campo transformou profundamente a vida no meio rural. Máquinas agrícolas avançadas, irrigação automatizada, correção do solo e acesso à internet têm aumentado a produtividade e a qualidade de vida dos produtores. Essa evolução não é apenas tecnológica, mas também social, com acesso a crédito, capacitação e políticas públicas que valorizam o agricultor e impulsionam o desenvolvimento das comunidades rurais.</p>
+      </div>
+    </div>
+  </div>
 
-    <div class="div5">NOVAS TECNOLOGIAS AGRÍCOLAS </div>
-    <img src="tecnologia_agricultura.jpg" alt="tecnologia_agricultura" class="img-div5">
+  <!-- BLOCO 5 -->
+  <div class="div5">
+    <h2>NOVAS TECNOLOGIAS AGRÍCOLAS</h2>
+    <div class="img-flex-container">
+      <img src="tecnologia_agricultura.jpg" alt="Novas Tecnologias Agrícolas">
+      <div class="img-texto texto-div5">
+        <p>As novas tecnologias agrícolas vêm revolucionando o modo de produzir no campo. Ferramentas como drones, sensores remotos, tratores autônomos e softwares de monitoramento permitem mapear áreas, prever colheitas e aplicar insumos com precisão. Essas inovações aumentam a produtividade, reduzem desperdícios e promovem uma agricultura mais inteligente, sustentável e alinhada às demandas do século XXI.</p>
+      </div>
+    </div>
+  </div>
 
-     <p class="texto-div5"> As novas tecnologias agrícolas vêm revolucionando o modo de produzir no campo. Ferramentas como drones, sensores remotos, tratores autônomos e softwares de monitoramento permitem mapear áreas, prever colheitas e aplicar insumos com precisão. Essas inovações aumentam a produtividade, reduzem desperdícios e promovem uma agricultura mais inteligente, sustentável e alinhada às demandas do século XXI.</p>
-</div>
+  <!-- Script de Acessibilidade -->
+  <script>
+  let tamanhoFonte = 100;
+
+  function aumentarFonte() {
+    tamanhoFonte += 10;
+    document.documentElement.style.fontSize = tamanhoFonte + '%';
+  }
+
+  function diminuirFonte() {
+    if (tamanhoFonte > 50) {
+      tamanhoFonte -= 10;
+      document.documentElement.style.fontSize = tamanhoFonte + '%';
+    }
+  }
+
+  function alternarContraste() {
+    document.body.classList.toggle('contraste-ativo');
+  }
+
+  function resetarAcessibilidade() {
+    tamanhoFonte = 100;
+    document.documentElement.style.fontSize = '100%';
+    document.body.classList.remove('contraste-ativo');
+  }
+</script>
 
 </body>
 </html>
