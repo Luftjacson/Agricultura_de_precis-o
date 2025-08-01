@@ -1,68 +1,77 @@
-📄 Resumo do Projeto — Site “Tecnologias no Campo”
-🏗️ Estrutura Geral Criada:
-HTML com 5 divisões temáticas (div1 a div5), cada uma contendo:
+LEIA-ME – Construção Didática de Site com HTML, CSS e JavaScript
+👨‍🏫 Objetivo do Material
+Este material foi desenvolvido com finalidade pedagógica, como recurso didático para o ensino de HTML, CSS e JavaScript no contexto da disciplina de Programação / Robótica / Matemática II, voltado especialmente para o Ensino Médio.
 
-Um título de seção (por padrão: "Divisão 1", "Divisão 2", etc.).
+A proposta é que os alunos compreendam, de forma estruturada, como um site moderno e funcional é construído a partir das três principais linguagens da web:
 
-Uma imagem ilustrativa temática (flutuante à esquerda, com texto ao lado).
+🟦 HTML – estrutura e conteúdo;
 
-Um parágrafo de texto informativo, com estilização individual.
+🟪 CSS – estilo visual e layout;
 
-Cabeçalho (header) criado no topo da página com:
+🟨 JavaScript – interatividade e comportamento.
 
-Um título principal (<h1>)
+🧱 Estrutura do Projeto
+O projeto é dividido em três arquivos principais:
 
-Um subtítulo opcional (<p class="subtitulo">)
+index.html → Estrutura principal do site
 
-🖼️ Conteúdos e Temas:
-Cada divisão aborda um tema específico relacionado à agricultura moderna:
+style.css → Regras de estilo e visual do site
 
-Divisão	Tema	Classe da imagem	Classe do texto
-div1	Agricultura de Precisão	.img-div1	.texto-div1
-div2	Agricultura 4.0	.img-div2	.texto-div2
-div3	Futuro da Agricultura	.img-div3	.texto-div3
-div4	Modernização do Campo	.img-div4	.texto-div4
-div5	Novas Tecnologias Agrícolas	.img-div5	.texto-div5
+Código JS embutido → Scripts de acessibilidade
 
-🎨 Estilizações (CSS):
-Responsividade:
+🧩 Componentes Criados
+📌 1. HTML: Estrutura Semântica e Divisões Didáticas
+O HTML foi escrito com comentários pedagógicos que indicam a função de cada bloco:
 
-Uso de overflow: auto; nas divisões para conter imagens com float.
+Cabeçalho (<header>) com título, ícones e assinatura;
 
-Uso de medidas flexíveis nas imagens (width: xxxpx com margin e float).
+Menu de acessibilidade fixo (botões de aumento de fonte e contraste);
 
-Imagens:
+Blocos de conteúdo (div1 a div5) com títulos, imagens e textos temáticos;
 
-Todas com box-shadow, border-radius e bordas específicas por tema.
+Script embutido com comandos básicos em JavaScript.
 
-Imagens alinhadas à esquerda com float: left, para que o texto flua ao lado.
+🎨 2. CSS: Estilização Acessível e Responsiva
+O CSS está totalmente comentado e dividido por seções, permitindo ao aluno identificar:
 
-Textos:
+Como aplicar cores, fontes, sombras e transições;
 
-Justificados com text-align: justify.
+Como criar botões, bordas e efeitos ao passar o mouse;
 
-Cada parágrafo tem cor, fonte e estilo próprios.
+Como ativar um modo de alto contraste (acessibilidade);
 
-Cabeçalho:
+Estilos aplicados a diferentes DIVs e imagens.
 
-Título principal com fundo escuro e destaque.
+As cores seguem uma paleta suave e moderna (verdes e tons claros), com modos alternativos para acessibilidade visual.
 
-Subtítulo em tom mais claro e itálico.
+⚙️ 3. JavaScript: Acessibilidade Dinâmica
+O JavaScript incluso permite:
 
-✅ Funcionalidades Implementadas:
-Página visualmente segmentada e bem organizada.
+Aumentar e diminuir o tamanho da fonte;
 
-Layout com imagens + textos temáticos para fins educacionais.
+Ativar/desativar modo de contraste escuro;
 
-Estilo responsivo e adaptável a diferentes telas.
+Resetar todas as configurações de acessibilidade.
 
-Uso correto de boas práticas semânticas (<header>, <p>, classes por seção).
+Cada função foi escrita com clareza para facilitar o ensino dos conceitos básicos de comportamento dinâmico no navegador.
 
-🧭 Próximos Passos Sugeridos:
-Inserir links de navegação ou menu fixo (opcional).
+🧑‍💻 Aplicações em Sala de Aula
+Este material pode ser utilizado para:
 
-Tornar o layout mais mobile-friendly com media queries.
+📚 Ensino introdutório de programação web;
 
-Incluir botões, ícones, vídeos ou animações para enriquecer a experiência.
+✍️ Atividades práticas com edição de código;
 
-Publicar a página no GitHub Pages ou Netlify, se desejar.
+💡 Discussões sobre acessibilidade digital;
+
+📊 Projetos interdisciplinares com foco em sustentabilidade, tecnologia no campo e ODS.
+
+📂 Arquivos para distribuição
+css_completo_colorido_formatado.docx → código CSS colorido e comentado
+
+html_modelo_didatico → estrutura HTML com marcações e explicações
+
+(Opcional) html_css_integrado.docx → versão mesclada para impressão e anotação
+
+🏁 Conclusão
+Este projeto não é apenas uma demonstração técnica, mas uma ferramenta didática para ensinar, refletir e criar com os alunos. Incentiva a leitura do código, a experimentação e o pensamento computacional com propósito.
