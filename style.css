@@ -1,25 +1,33 @@
-/* =====================================
+/* ===================================================
    1. CONFIGURAÇÕES GERAIS DO SITE
-===================================== */
+=================================================== */
+
+/* Define o tamanho base da fonte (100% = 16px, normalmente) */
 html {
-    font-size: 100%; /* Base para escalonamento */
+    font-size: 100%; /* Facilita uso de unidades relativas como rem */
 }
 
+/* Estilos básicos do corpo da página */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #F4FAF7;
-    color: #4B8673;
-    line-height: 1.6;
+    margin: 0; /* Remove as margens padrão do navegador */
+    padding: 0; /* Remove espaçamento interno padrão */
+    font-family: 'Arial', sans-serif; /* Fonte padrão do site */
+    background-color: #F4FAF7; /* Cor de fundo verde muito claro */
+    color: #4B8673; /* Cor do texto (verde escuro) */
+    line-height: 1.6; /* Altura entre linhas para facilitar leitura */
 }
 
-/* CONTRASTE ATIVO – aplica-se ao body */
+/* ===================================================
+   1.1. CONTRASTE ATIVO – ACESSIBILIDADE
+   Ativado via JavaScript para melhorar a leitura de pessoas com deficiência visual
+=================================================== */
+
 body.contraste-ativo {
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: #000 !important; /* Fundo preto */
+    color: #fff !important;            /* Texto branco */
 }
 
+/* Aplica o mesmo contraste às principais áreas do site */
 body.contraste-ativo header,
 body.contraste-ativo .div1,
 body.contraste-ativo .div2,
@@ -27,107 +35,105 @@ body.contraste-ativo .div3,
 body.contraste-ativo .div4,
 body.contraste-ativo .div5,
 body.contraste-ativo .img-texto {
-    background-color: #111 !important;
-    color: #ff0 !important;
-    border-color: #888 !important;
+    background-color: #111 !important; /* Fundo escuro */
+    color: #ff0 !important;            /* Texto amarelo */
+    border-color: #888 !important;     /* Borda cinza */
 }
 
+/* Ajustes de contraste nos botões */
 body.contraste-ativo button {
-    background-color: #333 !important;
-    color: #fff !important;
-    border: 1px solid #fff !important;
+    background-color: #333 !important; /* Fundo cinza escuro */
+    color: #fff !important;            /* Texto branco */
+    border: 1px solid #fff !important; /* Borda branca */
 }
 
+/* Aplica filtro visual nas imagens em contraste ativo */
 body.contraste-ativo img {
     filter: grayscale(100%) contrast(150%);
+    /* Imagem em preto e branco e com contraste aumentado */
 }
 
-/* =====================================
+/* ===================================================
    2. CABEÇALHO MODERNO E INTERATIVO
-===================================== */
+=================================================== */
+
 .site-header {
+    position: relative; /* Necessário para posicionar elementos internos como assinatura */
     background: linear-gradient(rgba(40, 80, 50, 0.6), rgba(40, 80, 50, 0.6)),
                 url('fundo_cabeçalho.jpg') center/cover no-repeat;
-    padding: 80px 20px;
-    text-align: center;
-    color: #ffffff;
-    border-bottom: 4px solid #4B8673;
-    border-radius: 12px;
-    margin: 40px auto;
-    max-width: 960px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: 'Playfair Display', serif;
+    padding: 80px 20px;        /* Espaçamento interno */
+    text-align: center;        /* Centraliza conteúdo */
+    color: #ffffff;            /* Cor do texto */
+    border-bottom: 4px solid #4B8673; /* Borda inferior */
+    border-radius: 12px;       /* Arredondamento dos cantos */
+    margin: 40px auto;         /* Espaçamento externo */
+    max-width: 960px;          /* Largura máxima */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suavidade na animação */
+    font-family: 'Playfair Display', serif; /* Fonte decorativa */
 }
 
+/* Efeito de animação ao passar o mouse sobre o cabeçalho */
 .site-header:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    transform: scale(1.02); /* Aumenta levemente */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); /* Sombra mais forte */
 }
 
+/* Estilo do título principal dentro do cabeçalho */
 .site-header h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
-    font-size: 3.125rem; /* equivalente a 50px */
+    font-size: 3.125rem; /* Equivale a 50px */
     margin: 0;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #ffffff;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Sombra no texto */
 }
 
-/* ÍCONES ESTÁTICOS NO CABEÇALHO */
+/* ===================================================
+   2.1. ÍCONES ESTÁTICOS NO CABEÇALHO
+=================================================== */
+
 .icone-animado {
-    font-size: 3rem; /* tamanho fixo */
+    font-size: 3rem; /* Tamanho fixo do ícone */
     margin: 10px;
     display: inline-block;
     animation: none !important;
     position: static !important;
-    user-select: none;
+    user-select: none; /* Evita que o usuário selecione o ícone por engano */
 }
 
-.site-header {
-    position: relative; /* adicionado para posicionamento da assinatura */
-    background: linear-gradient(rgba(40, 80, 50, 0.6), rgba(40, 80, 50, 0.6)),
-                url('fundo_cabeçalho.jpg') center/cover no-repeat;
-    padding: 80px 20px;
-    text-align: center;
-    color: #ffffff;
-    border-bottom: 4px solid #4B8673;
-    border-radius: 12px;
-    margin: 40px auto;
-    max-width: 960px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: 'Playfair Display', serif;
-}
-/* =====================================
-   3. MENU DE ACESSIBILIDADE
-===================================== */
+/* ===================================================
+   3. MENU DE ACESSIBILIDADE FIXO NA TELA
+=================================================== */
+
 .acessibilidade-wrapper {
-    position: fixed;
+    position: fixed; /* Fica fixo na tela */
     top: 100px;
     right: 0;
     height: auto;
-    z-index: 1000;
+    z-index: 1000; /* Fica acima de outros elementos */
 }
 
+/* Ao passar o mouse, o menu aparece */
 .acessibilidade-wrapper:hover .acessibilidade-menu {
-    right: 0;
+    right: 0; /* Exibe o menu deslizando */
 }
 
 .acessibilidade-menu {
     position: absolute;
     top: 0;
-    right: -150px;
+    right: -150px; /* Começa escondido */
     width: 150px;
-    background-color: #708D81;
+    background-color: #708D81; /* Cor de fundo do menu */
     padding: 10px;
     border-radius: 10px 0 0 10px;
     box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.3);
     transition: right 0.4s ease;
 }
 
+/* Estilo dos botões do menu */
 .acessibilidade-menu button {
     display: block;
     width: 100%;
@@ -142,16 +148,18 @@ body.contraste-ativo img {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Animação de hover no botão */
 .acessibilidade-menu button:hover {
     background-color: #4B8673;
     color: #ffffff;
 }
 
-/* =====================================
-   4. DIVs ESTILIZADAS
-===================================== */
+/* ===================================================
+   4. DIVs ESTILIZADAS – EFEITO VISUAL DOS BLOCOS
+=================================================== */
+
 .div1, .div2, .div3, .div4, .div5 {
-    background: linear-gradient(135deg, #CDE8D5, #A8D5BA);
+    background: linear-gradient(135deg, #CDE8D5, #A8D5BA); /* Degradê suave */
     border: 2px solid #4B8673;
     border-radius: 12px;
     margin: 40px auto;
@@ -166,34 +174,37 @@ body.contraste-ativo img {
     text-transform: uppercase;
 }
 
+/* Efeito ao passar o mouse sobre as divs */
 .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover {
     transform: scale(1.02);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
-/* =====================================
+/* ===================================================
    5. IMAGENS AJUSTADAS
-===================================== */
+=================================================== */
+
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%;       /* Responsivo – adapta à largura do container */
+    height: auto;          /* Mantém proporção da imagem */
     display: block;
     margin: 15px auto;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
 }
 
-/* =====================================
-   6. TEXTOS NAS DIVs
-===================================== */
+/* ===================================================
+   6. TEXTOS DENTRO DAS DIVs
+=================================================== */
+
 .div1 p, .div2 p, .div3 p, .div4 p, .div5 p {
     font-family: 'Arial', sans-serif;
     font-size: 1.05rem;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6); /* Fundo branco transparente */
     color: #2c3e50;
     text-align: justify;
     padding: 15px;
-    border-left: 4px solid #708D81;
+    border-left: 4px solid #708D81; /* Faixa decorativa à esquerda */
     margin: 20px 0 0 0;
     border-radius: 6px;
 }
