@@ -1,5 +1,7 @@
 LEIA-ME – Construção Didática de Site com HTML, CSS e JavaScript
+
 👨‍🏫 Objetivo do Material
+
 Este material foi desenvolvido com finalidade pedagógica, como recurso didático para o ensino de HTML, CSS e JavaScript no contexto da disciplina de Programação / Robótica / Matemática II, voltado especialmente para o Ensino Médio.
 
 A proposta é que os alunos compreendam, de forma estruturada, como um site moderno e funcional é construído a partir das três principais linguagens da web:
